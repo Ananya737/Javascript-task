@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./Style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<section id="sec">
+
+    <h1 class="heading">Fitness Tracker!</h1>
+
+    <form>
+
+
+
+        <p id="errname"></p>
+        <div>Enter Name: <input type="text" id="inpname"></div>
+
+        <p id="errage"></p>
+        <div>Enter Age: <input type="number" id="inpage"></div>
+
+        <p id="errweight"></p>
+        <div>Enter Weight: <input type="number" placeholder="In kilograms" id="inpweight"></div>
+
+        <p id="errheight"></p>
+        <div>Enter Height: <input type="number" placeholder="In meters" id="inpheight"></div>
+
+        <p id="errsugar"></p>
+        <div>Enter Random Sugar Level: <input type="number" id="inpsugar"></div>
+
+        <p id="errheart"></p>
+        <div>Enter Systolic Blood Pressure: <input type="number" id="inpheart"></div>
+
+        <p id="errheart1"></p>
+        <div>Enter Distolic Blood Pressure: <input type="number" id="inpheart1"></div>
+
+        <div><input type="submit" value="Submit" onclick="return formfilll()" id="sub"></div>
+
+        
+    </form>
+
+<div id="btns">
+    <button onclick="return bmi()">Check BMI-Body Mass Index</button>
+
+    <button onclick="return sugar()">Check Insulin Level</button>
+
+    <button onclick="return cbp()">Check Blood Pressure</button>
+</div>
+
+    <div id="dataShow">
+        Your fitness will be shown here!
+
+    <div><h1 id="showbmi"></h1></div>
+    <div><h2 id="show"></h2></div>
+
+    <div><h1 id="showdia"></h1></div>
+
+    <div><h1 id="showbp"></h1></div>
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+    
+
+   
+
+    <script src="./FitnessTracker.js"></script>
+</body>
+</html>
