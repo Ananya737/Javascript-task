@@ -76,7 +76,11 @@ let bmi=()=>{
     showbmi.innerHTML= `BMI= ${(inpweight/(inpheight*inpheight))}`
     let bmi=(inpweight/(inpheight*inpheight));
 
-    if(bmi<=18.5){
+    if(inpweight=="" && inpheight==""){
+        show.innerHTML="Please enter your height and weight.";
+        showbmi.innerHTM="";
+    }
+    else if(bmi<=18.5){
         show.innerHTML="You are underweight";
         showdia.innerHTML="";
         showbp.innerHTML="";
@@ -109,8 +113,10 @@ let sugar=()=>{
     let inpsugar=document.querySelector("#inpsugar").value;
     let showdia=document.querySelector("#showdia");
 
-    
-    if(inpsugar<=70){
+    if(inpsugar==""){
+        showdia.innerHTML="Please enter insulin level.";
+    }
+    else if(inpsugar<=70){
 
         showdia.innerHTML="Sugar level is low";
         showbmi.innerHTML= "";
@@ -147,7 +153,10 @@ let cbp=()=>{
     let inpheart=document.querySelector("#inpheart").value;
     let inpheart1=document.querySelector("#inpheart1").value;
 
-    if(inpheart<=120 && inpheart1<=80){
+    if(inpheart==""){
+        showbp.innerHTML="Please enter your blood pressure.";
+    }
+    else if(inpheart<=120 && inpheart1<=80){
         showbp.innerHTML="You are healthy";
         showbmi.innerHTML= "";
         showdia.innerHTML= "";
