@@ -5,6 +5,8 @@ let inpheart1=document.querySelector("#inpheart1").value;
 let showbp=document.querySelector("#showbp");
 
 
+
+
 let formfilll=()=>{
     let inpname=document.querySelector("#inpname").value;
     let inpage=document.querySelector("#inpage").value;
