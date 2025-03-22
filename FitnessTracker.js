@@ -58,8 +58,8 @@ let formfilll=()=>{
 
 
 
-    
-
+    location.href="ShowFitness.html";
+return false;
    
     
 }
